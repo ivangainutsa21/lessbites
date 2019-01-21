@@ -373,7 +373,7 @@ class Detail extends Component{
                                 let hungry = bite.hungry;
                                 let point = bite.point;
                                 return(
-                                    <div style={{minWidth: 220, height: 270, borderRadius: 25, padding: "10px", margin: "0px 10px", backgroundColor: 'white'}}>
+                                    <div style={{minWidth: 220, height: 250, borderRadius: 25, padding: "10px", margin: "0px 10px", backgroundColor: 'white'}}>
                                         <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
                                             <label style={{color: 'red'}}>{months[parseInt(date.slice(5, 7)) - 1]} {date.slice(-2)}, {date.slice(0 ,4)}</label>
                                             <label style={{color: 'red'}}>{time % 12 === 0 ? 12 : time % 12}:{min < 2 ? '0' + min * 5 : min * 5} {time < 12 ? "AM" : "PM"}</label>
@@ -392,7 +392,7 @@ class Detail extends Component{
                                         }
                                         {
                                             imageUri ?
-                                            <img src={imageUri} style={{width: '100%', height: 200, borderRadius: 20, marginTop: 20}} alt="asdf"></img>
+                                            <img src={imageUri} style={{width: '100%', height: 180, borderRadius: 15, marginTop: 20}} alt="asdf"></img>
                                             :null
                                         }
                                     </div>
