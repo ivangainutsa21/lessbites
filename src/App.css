@@ -1,32 +1,67 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  font-size: calc(10px + 10vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content {
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-content-login{
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+
+.sub-content-singup{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.App-logo{
+  height: 15vmin;
+  margin-bottom: 2vh;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid blue;
+}
+
+
+button :focus{
+  outline: none;
+  border: 2px solid green;
+}
+
+.App-input {
+  border: 'solid';
+  border-radius: 5px;
+  padding: 5px;
+  width: 90%;
+  font-size: 18px;
+  border-style: groove;
+  margin: 1vh 0px;
 }
